@@ -2,6 +2,7 @@ package com.company;
 
 import javafx.geometry.HPos;
 import javafx.geometry.Pos;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -21,9 +22,10 @@ import javafx.stage.Stage;
  */
 public class tabel {
 
+
     private GridPane aken2 = new GridPane();
     private ScrollPane sp = new ScrollPane();
-    private Scene scene2 = new Scene(aken2,1000,600);
+    private Scene scene2 = new Scene(sp,800,500);
     VBox resultBio = new VBox();
     VBox resultSooda = new VBox();
     VBox resultJuurde = new VBox();
@@ -31,9 +33,12 @@ public class tabel {
 
 
 
+
     public tabel(TextField biomass, TextField protsent, TextField fcr, TextField paevuarv) {// получили текстфилды
 
+
         sp.setContent(aken2);
+        sp.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
 
         seadistaText();
 
@@ -119,7 +124,7 @@ public class tabel {
         stage.setScene(scene2);
         stage.show();
         //sp.setContent(resultBio); //content scrollpane
-        //sp.setVbarPolicy(ScrollBarPolicy.ALWAYS); //naita vbar koguaeg
+        //sp.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS); //naita vbar koguaeg
         aken2.setGridLinesVisible(true); // показывает сетку gridpane
         aken2.setVgap(9); // отступы между копками, делает пустые места по вертикали
         aken2.setHgap(6); // отступы между копками, делает пустые места по горизонтали
@@ -130,7 +135,7 @@ public class tabel {
         aken2.add(resultPaev2, 0, 1);
         //aken2.add(sp,1,1); //vstavljaet skroll s grid
         // dlja kazdogo vboxa nado otdeljno delatj scrollpane, nado kak to naiti kak sdelatj scroll dlja vsei stranici.
-
+        //aken2.add(sp,4,1);
 
 
 
