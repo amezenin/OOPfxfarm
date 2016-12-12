@@ -15,7 +15,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import static javafx.scene.control.ScrollPane.*;
 
 /**
  * Created by Anton on 20.11.2016.
@@ -23,15 +22,18 @@ import static javafx.scene.control.ScrollPane.*;
 public class tabel {
 
     private GridPane aken2 = new GridPane();
+    private ScrollPane sp = new ScrollPane();
     private Scene scene2 = new Scene(aken2,1000,600);
     VBox resultBio = new VBox();
     VBox resultSooda = new VBox();
     VBox resultJuurde = new VBox();
     VBox resultPaev2 = new VBox();
-    ScrollPane sp = new ScrollPane();
+
 
 
     public tabel(TextField biomass, TextField protsent, TextField fcr, TextField paevuarv) {// получили текстфилды
+
+        sp.setContent(aken2);
 
         seadistaText();
 
@@ -112,7 +114,6 @@ public class tabel {
 
     private void startStage() {
         Stage stage = new Stage();
-
         stage.setTitle("Fishfarm Calculator!");
         scene2.setFill(Color.GRAY);
         stage.setScene(scene2);
