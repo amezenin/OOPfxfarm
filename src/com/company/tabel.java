@@ -37,8 +37,8 @@ public class tabel {
     public tabel(TextField biomass, TextField protsent, TextField fcr, TextField paevuarv) {// получили текстфилды
 
 
-        sp.setContent(aken2);
-        sp.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
+        sp.setContent(aken2); //vstavljaem v scrollpane gridpane
+        sp.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED); //pokazivaet vbar
 
         seadistaText();
 
@@ -123,8 +123,6 @@ public class tabel {
         scene2.setFill(Color.GRAY);
         stage.setScene(scene2);
         stage.show();
-        //sp.setContent(resultBio); //content scrollpane
-        //sp.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS); //naita vbar koguaeg
         aken2.setGridLinesVisible(true); // показывает сетку gridpane
         aken2.setVgap(9); // отступы между копками, делает пустые места по вертикали
         aken2.setHgap(6); // отступы между копками, делает пустые места по горизонтали
@@ -133,9 +131,8 @@ public class tabel {
         aken2.add(resultSooda, 2, 1);
         aken2.add(resultJuurde, 3, 1);
         aken2.add(resultPaev2, 0, 1);
-        //aken2.add(sp,1,1); //vstavljaet skroll s grid
         // dlja kazdogo vboxa nado otdeljno delatj scrollpane, nado kak to naiti kak sdelatj scroll dlja vsei stranici.
-        //aken2.add(sp,4,1);
+
 
 
 
