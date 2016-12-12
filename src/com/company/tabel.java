@@ -117,8 +117,8 @@ public class tabel {
         scene2.setFill(Color.GRAY);
         stage.setScene(scene2);
         stage.show();
-        //sp.setContent(resultBio); //content scrolpane
-        //sp.setVbarPolicy(ScrollBarPolicy.ALWAYS); //vsegda pokazivatj vbar
+        //sp.setContent(resultBio); //content scrollpane
+        //sp.setVbarPolicy(ScrollBarPolicy.ALWAYS); //naita vbar koguaeg
         aken2.setGridLinesVisible(true); // показывает сетку gridpane
         aken2.setVgap(9); // отступы между копками, делает пустые места по вертикали
         aken2.setHgap(6); // отступы между копками, делает пустые места по горизонтали
