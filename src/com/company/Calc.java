@@ -18,33 +18,33 @@ import javafx.stage.Stage;
  */
 public class Calc {
 
-    private GridPane aken1 = new GridPane();
-    private Scene scene1 = new Scene(aken1, 400, 200);
-    Button Ratsioon = new Button("Söödaratsiooni kalkulaator");
-    Button Biofiltri = new Button("Biofiltri võimsuse kalkulaator");
+    private GridPane aken1 = new GridPane(); // sozdanie gridpane tablica
+    private Scene scene1 = new Scene(aken1, 450, 200); // baza okna
+    Button Ratsioon = new Button("Söödaratsiooni kalkulaator"); //knopki
+    Button Biofiltri = new Button("Biofiltri võimsuse kalkulaator"); //knopki
 
     public Calc () { //bez metoda ne zapustish
-        startStage();
-        seadistaNuppud();
-        arvutamine();
-        seadistaText();
+        startStage(); //  zapusk metoda okna i ego zapisk
+        seadistaNuppud(); // zapusk metoda metoda, kotorij raspologaet knopki
+        arvutamine(); // zapusk metoda sozdanie ras4etov
+        seadistaText(); // zapusk metoda teksa teksa
     }
 
-    private void seadistaText() {
-        Text tere = new Text("FishFarmCalc vol 1.0 ");
+    private void seadistaText() { //metod otve4ajushij za tekst ja ego raspolozenie
+        Text tere = new Text("FishFarmCalc vol 1.0 "); //sozdanie objekt teksta
         Text val = new Text("Valige kalkulaator");
-        tere.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
-        aken1.add(tere, 1, 0);
+        tere.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20)); //prosvoenie objektu shrifta
+        aken1.add(tere, 1, 0); //dobavlenie teksta v ja4ejku gridpane
         val.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         aken1.add(val, 2, 0);
     }
 
-    private void startStage() {
+    private void startStage() { //metod otve4aet za vizualizaciju okna
         Stage stage = new Stage();
-        stage.setTitle("Fishfarm Calculator!");
-        scene1.setFill(Color.GRAY);
-        stage.setScene(scene1);
-        stage.show();
+        stage.setTitle("Fishfarm Calculator!"); // dobavlenie nazvanija v shapku okna
+        scene1.setFill(Color.GRAY); //cvet fona
+        stage.setScene(scene1); //dobavitj v ramku okna fon
+        stage.show(); //zapusk ramki okna
         //aken1.setGridLinesVisible(true); // показывает сетку гридпейн
         aken1.setVgap(15); // отступы между копками, делает пустые места по вертикали
         aken1.setHgap(12); // отступы между копками, делает пустые места по горизонтали
@@ -52,15 +52,15 @@ public class Calc {
     }
 
 
-    private void seadistaNuppud() {
+    private void seadistaNuppud() { //metod kotorij dobavljaet knopki v setku gridpane
         aken1.add(Ratsioon, 1, 1);
         aken1.add(Biofiltri, 2, 1);
     }
 
 
-    private void arvutamine() {
-        Ratsioon.setOnAction(arg0 -> new ratsioon());
-        Biofiltri.setOnAction(arg0 -> new biofilter());
+    private void arvutamine() { //metod kotori pri nazatii knopki zapuskaet kod drugogo classa
+        Ratsioon.setOnAction(arg0 -> new ratsioon()); //zapusk classa ratsion
+        Biofiltri.setOnAction(arg0 -> new biofilter()); //zapusk classa biofilter
     }
 
 

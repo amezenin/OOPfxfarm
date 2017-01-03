@@ -72,7 +72,7 @@ public class ratsioon {
         aken2.setVgap(9); // отступы между копками, делает пустые места по вертикали
         aken2.setHgap(6); // отступы между копками, делает пустые места по горизонтали
         aken2.setAlignment(Pos.CENTER); // delaet gridpane po zentru
-        aken2.setHalignment(nullida, HPos.CENTER);
+        aken2.setHalignment(nullida, HPos.CENTER); // raspologaet knopki po centru
         aken2.setHalignment(feedTable, HPos.CENTER);
 
     }
@@ -121,7 +121,7 @@ public class ratsioon {
 
     });*/
 
-        nullida.setOnAction((event) -> {
+        nullida.setOnAction((event) -> { //obnuljaet textfield
             biomass.setText(null);
             protsent.setText(null);
             fcr.setText(null);
