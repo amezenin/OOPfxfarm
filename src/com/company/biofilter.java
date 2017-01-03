@@ -20,7 +20,7 @@ import static javafx.scene.control.Button.*;
 public class biofilter {
 
     private GridPane aken3 = new GridPane();
-    private Scene scene3 = new Scene(aken3);
+    private Scene scene3 = new Scene(aken3,490,250);
     Button arvuta = new Button("Arvuta!");
     Button nullida = new Button("Nullida!");
 
