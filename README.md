@@ -48,3 +48,6 @@ Kasutaja sisestab:
 
 * Söödakulud, kg
 * Reaalne juurdekasv
+
+## Litsents
+CC BY-NC-ND
