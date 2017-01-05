@@ -1,25 +1,44 @@
-## Aquaculture calculators
+## FishFarm calculators
 
-1. Soodaplaani arvutamine
+1. Soodaplaani kalkulaator
 
-Inimene peab sisestama: 
+Kasutaja peab sisestama: 
 
 * Biomass
 * Soodakogus paevas, protsentides
 * Soodakoefitsient ehk FCR
 * Paevade arv
 
-**Hetkel pean saavutama, et ta naitaks uks paev.** Tulevikus programm peab naitama mittu paevad jarjest.
 
-2. Vaiksed kalkulaatorid
+2. Biofiltri võimsuse kalkulaator
 
-Naiteks FCR ja Juurdekasvu arvutamine
+Kasutaja sisestab:
 
-3. Biofiltri toovoimsuse arvutamine. 
+* Maksimaalne söödakogus (kui palju kaladele antakse süüa, kui süsteemis on maksimaalne biomass).
+* Biofiltri elemendi tööpindala (kui palju 1m3 elemendi annab tööpindala m2). Näiteks Bioelemets Ecoplast: 1m3 = 750m2.
 
-Inimene sisestab:
 
-* Maksimaalne biomass
-* Biofiltri elemendi toopindala (m2/m3)
-* Soodakogus paevas %, lopp etapil
-* Valgu sisaldu soodas %
+3. Lihtsustatud kalakasvatuse kalkulaator
+
+1) Biomassi arvutamine:
+
+Kasutaja sisestab:
+
+* Kalade arv, tk
+* Keskmine kaal, kg/tk
+
+2) Planeeritav juurdekasv
+
+Kasutaja sisestab:
+
+* Söödakogus, kg 
+* Söödakoefitsient ehk FCR (annab söödatootja)
+
+3) Reaalne FCR
+
+Söödatootjad annavad oma FCRi numbrid. Kuid väga tihti juhtub nii, et see ei vasta tõele. Siis kui kalakasvataja teab reaalne juurdekasv ja sööda kulud, saab leida reaalne söödakoefitsient(FCR).
+
+Kasutaja sisestab:
+
+* Söödakulud, kg
+* Reaalne juurdekasv
