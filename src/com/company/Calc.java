@@ -1,11 +1,13 @@
 package com.company;
 
+import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -23,11 +25,21 @@ public class Calc {
     Button Biofiltri = new Button("Biofiltri võimsuse kalkulaator"); //knopki
     Button lihtCalc = new Button("Lihtsustatud kalakasvatuse kalkulaator");
 
+
+
     public Calc () { //bez metoda ne zapustish
         startStage(); //  zapusk metoda okna i ego zapisk
         seadistaNuppud(); // zapusk metoda metoda, kotorij raspologaet knopki
         arvutamine(); // zapusk metoda sozdanie ras4etov
         seadistaText(); // zapusk metoda teksa teksa
+        seadistaLitsens();
+    }
+
+    private void seadistaLitsens() {
+        Image lit = new Image(getClass().getResourceAsStream("litsens.png"));
+        ImageView litsens = new ImageView(lit);
+        aken1.add(litsens,2,2);
+        aken1.setHalignment(litsens, HPos.CENTER); //viravnivaet kartinku po centru
     }
 
     private void seadistaText() { //metod otve4ajushij za tekst ja ego raspolozenie
