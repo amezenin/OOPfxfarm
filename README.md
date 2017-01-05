@@ -1,5 +1,5 @@
 # FishFarm calculators
-# Kirjeldus
+
 
 
 ## Kirjeldus. Antud programm teeb kalakasvataja elu lihtsamaks. Juba kasutatakse Järvamaa Kutsehariduskeskuse Vesiviljeluse Õpe- ja Katsebaasis. 
