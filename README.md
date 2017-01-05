@@ -10,7 +10,7 @@ Kasutaja peab sisestama:
 * Paevade arv
 
 
-2. Biofiltri võimsuse kalkulaator
+1.1. Biofiltri võimsuse kalkulaator
 
 Kasutaja sisestab:
 
@@ -18,7 +18,7 @@ Kasutaja sisestab:
 * Biofiltri elemendi tööpindala (kui palju 1m3 elemendi annab tööpindala m2). Näiteks Bioelemets Ecoplast: 1m3 = 750m2.
 
 
-3. Lihtsustatud kalakasvatuse kalkulaator
+1.2. Lihtsustatud kalakasvatuse kalkulaator
 
 1) Biomassi arvutamine:
 
