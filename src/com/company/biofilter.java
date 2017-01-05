@@ -1,9 +1,11 @@
 package com.company;
 
 import javafx.geometry.HPos;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
@@ -12,7 +14,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import static javafx.scene.control.Button.*;
 
 /**
  * Created by Anton on 16.11.2016.
@@ -27,8 +28,9 @@ public class biofilter {
 
     TextField maxSoot = new TextField();
     TextField element = new TextField();
-    TextField tulemusMin = new TextField();
-    TextField tulemusMax = new TextField();
+
+    Label tulemusMax = new Label();
+    Label tulemusMin = new Label();
 
 
     public biofilter () { //bez metoda ne zapustish
@@ -37,23 +39,34 @@ public class biofilter {
         seadistaField();
         arvutamine();
         seadistaText();
+        seadistaLabel();
 
+    }
+
+    private void seadistaLabel() {
+        aken3.add(tulemusMax,2,5);
+        aken3.setMargin(tulemusMax, new Insets(0,0,0,30));
+
+        aken3.add(tulemusMin,0,5);
+        aken3.setMargin(tulemusMin, new Insets(0,0,0,30));
     }
 
     private void seadistaText() {
 
         Text sooda = new Text("Maksimaalne sööda kogus, kg");
         Text element = new Text("Biofiltri elemendi tööpindala, m2/m3");
-        Text tulemus = new Text("Minimaalne elemendi kogus");
-        Text tulemus2 = new Text("Soovitatav elemendi kogus");
+        Text tulemus = new Text("Minimaalne elemendi kogus, m3");
+        Text tulemus2 = new Text("Soovitatav elemendi kogus, m3");
         sooda.setFont(Font.font("Tahoma", FontWeight.NORMAL, 15));
         aken3.add(sooda, 0, 1);
         element.setFont(Font.font("Tahoma", FontWeight.NORMAL, 15));
         aken3.add(element, 2, 1);
         tulemus.setFont(Font.font("Tahoma", FontWeight.NORMAL, 15));
         aken3.add(tulemus, 0, 4);
+        aken3.setMargin(tulemus, new Insets(40,0,0,0));//otstup ot verhnej 4asti teksta, vnutri ja4eiki
         tulemus2.setFont(Font.font("Tahoma", FontWeight.NORMAL, 15));
         aken3.add(tulemus2, 2, 4);
+        aken3.setMargin(tulemus2, new Insets(40,0,0,0));//otstup ot verhnej 4asti teksta, vnutri ja4eiki
     }
 
     private void arvutamine() {
@@ -81,10 +94,6 @@ public class biofilter {
         maxSoot.setPromptText("Maksimaalne söödakogus, kg");
         aken3.add(element,2,2);
         element.setPromptText("Biofiltri elemendi tööpindala, m2/m3");
-        aken3.add(tulemusMin,0,5);
-        tulemusMin.setPromptText("Minimaalne elemendi kogus");
-        aken3.add(tulemusMax,2,5);
-        tulemusMax.setPromptText("Soovitatav elemendi kogus");
 
     }
 

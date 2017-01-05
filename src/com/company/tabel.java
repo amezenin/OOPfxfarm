@@ -14,7 +14,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 
@@ -70,10 +69,7 @@ public class tabel {
         resultBio.setMargin(uusBio, new Insets(5,5,5,5));
         resultJuurde.setMargin(juurde, new Insets(5,5,5,5));
         resultPaev2.setMargin(paev, new Insets(5,5,5,5));
-        /*System.out.println(1 + " päev");
-        System.out.println(" Biomass: " + bioMassField);
-        System.out.println(" Söödakogus: " + soodakogus);
-        System.out.println(" Planeeritav juurdekasv: " + juurdekasv);*/
+
 
 
         //vtoroj denj i daljshe
@@ -85,11 +81,6 @@ public class tabel {
             mas[i] = juurdekasv + mas[i - 1]; //uus biomass
 
 
-
-            /*System.out.println(i + 1 + " päev");
-            System.out.println(" Biomass: " + mas[i - 1]);
-            System.out.println(" Söödakogus: " + soodakogus);
-            System.out.println(" Planeeritav juurdekasv: " + juurdekasv);*/
 
             //dannie na4inaja so vtorogo dlja, to 4to s4itajet cikl
             Label uusBio2 = new Label(Double.toString(mas[i - 1])); //dealem iz double string, tak kak v Vbox mozno vstavitj toljko objekt
@@ -104,7 +95,7 @@ public class tabel {
             //resultBio.setAlignment(Pos.CENTER); //razmeshenie objekta po centru ja4eiki vBox
             //resultSooda.setAlignment(Pos.CENTER);
             //resultJuurde.setAlignment(Pos.CENTER);
-            resultPaev2.setAlignment(Pos.CENTER);
+            //resultPaev2.setAlignment(Pos.CENTER);
 
             resultBio.setPadding(new Insets(10, 10, 10, 10)); // otstupi ot objekta vnutri vBoxa
             resultSooda.setPadding(new Insets(10, 10, 10, 10)); // otstupi ot objekta vnutri  vsego vBoxa
