@@ -1,6 +1,8 @@
 ## FishFarm calculators
 
-1. Soodaplaani kalkulaator
+# Antud programm teeb kalakasvataja elu lihtsamaks. Juba kasutatakse Järvamaa Kutsehariduskeskuse Vesiviljeluse Õpe- ja Katsebaasis. 
+
+# 1.1. Soodaplaani kalkulaator
 
 Kasutaja peab sisestama: 
 
@@ -10,7 +12,8 @@ Kasutaja peab sisestama:
 * Paevade arv
 
 
-1.1. Biofiltri võimsuse kalkulaator
+
+# 1.2. Biofiltri võimsuse kalkulaator
 
 Kasutaja sisestab:
 
@@ -18,7 +21,8 @@ Kasutaja sisestab:
 * Biofiltri elemendi tööpindala (kui palju 1m3 elemendi annab tööpindala m2). Näiteks Bioelemets Ecoplast: 1m3 = 750m2.
 
 
-1.2. Lihtsustatud kalakasvatuse kalkulaator
+
+# 1.3. Lihtsustatud kalakasvatuse kalkulaator
 
 1) Biomassi arvutamine:
 
