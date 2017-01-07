@@ -51,3 +51,5 @@ Kasutaja sisestab:
 
 ## Litsents
 CC BY-NC-ND
+
+https://creativecommons.org/
